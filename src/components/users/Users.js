@@ -13,7 +13,7 @@ const Users = () => {
 			<div>
 				<br />
 				<br />
-				<div className='card my-2'>
+				<div className='card my-2' align='center'>
 					<h1>No Users to show Search for an Username or Try improving your search</h1>
 				</div>
 			</div>
