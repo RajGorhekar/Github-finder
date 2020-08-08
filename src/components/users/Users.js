@@ -6,6 +6,16 @@ import PropTypes from 'prop-types';
 const Users = ({ users, loading }) => {
 	if (loading) {
 		return <Spinner />;
+	} else if (users.length === 0) {
+		return (
+			<div>
+				<br />
+				<br />
+				<div className='card my-2'>
+					<h1>No Users to show Search for an Username or Try improving your search</h1>
+				</div>
+			</div>
+		);
 	} else {
 		return <div style={userStyle}>{users.map((user) => <UserItem key={user.id} user={user} />)}</div>;
 	}
